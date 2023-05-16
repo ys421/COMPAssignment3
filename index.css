@@ -1,0 +1,123 @@
+body {
+  background-color: #6B9AC4;
+}
+
+#pokemon-counts{
+  margin-bottom: 20px;
+  color: #4D4730;
+}
+
+#pokeCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pokeCard {
+  width: 180px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+.pokeCard h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.pokeCard img {
+  width: 140px;
+  height: 140px;
+  margin: 10px auto;
+  display: block;
+}
+
+.pokeCard button {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  background-color: #c3ded3;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+}
+
+.pokeCard button:hover {
+  background-color: #7ccba2;
+}
+
+#pokeModal .modal-dialog {
+  max-width: 400px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.modal-body img {
+  max-width: 200px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#pagination .btn {
+  margin: 0 10px;
+  background-color: #6B9AC4;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#pagination .btn:hover {
+  background-color: #4D4730;
+}
+
+#pagination .btn:disabled {
+  background-color: #6B9AC4;
+}
+
+#pagination .btn.current {
+  background-color: #4059AD;
+}
+
+.type-filter-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.type-filter-container .custom-control {
+  margin-left: 10px;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1px;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
